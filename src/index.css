@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #304056;
+  background:
+    radial-gradient(circle at top left, rgba(220, 236, 255, 0.85), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 231, 239, 0.8), transparent 26%),
+    linear-gradient(180deg, #fbfdff 0%, #f8fbff 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(14px);
+}
+
+.bed-grid {
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+}
